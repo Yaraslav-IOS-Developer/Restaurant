@@ -8,9 +8,9 @@
 
 
 
-struct Categories: Codable {
+struct Categoryes: Codable {
     
-    let categories: [String]
+    let categoryes: [String]
 }
 
 

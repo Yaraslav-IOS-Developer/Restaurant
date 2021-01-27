@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C423655425C1C267004309F5 /* CategoryTableViewController+UITableViewDataSourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C423655325C1C267004309F5 /* CategoryTableViewController+UITableViewDataSourse.swift */; };
 		C44849D425C08B6300E22044 /* IntermediaryModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44849D325C08B6300E22044 /* IntermediaryModels.swift */; };
 		C44849D725C08CB400E22044 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44849D625C08CB400E22044 /* Order.swift */; };
 		C44849DA25C08E7400E22044 /* NetworkManagerMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44849D925C08E7400E22044 /* NetworkManagerMenuController.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C423655325C1C267004309F5 /* CategoryTableViewController+UITableViewDataSourse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CategoryTableViewController+UITableViewDataSourse.swift"; sourceTree = "<group>"; };
 		C44849D325C08B6300E22044 /* IntermediaryModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntermediaryModels.swift; sourceTree = "<group>"; };
 		C44849D625C08CB400E22044 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		C44849D925C08E7400E22044 /* NetworkManagerMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerMenuController.swift; sourceTree = "<group>"; };
@@ -49,6 +51,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C423655225C1C071004309F5 /* CategoryTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C45A733425C060850038AC06 /* CategoryTableViewController.swift */,
+				C423655325C1C267004309F5 /* CategoryTableViewController+UITableViewDataSourse.swift */,
+			);
+			path = CategoryTableViewController;
+			sourceTree = "<group>";
+		};
 		C45A730E25C052E10038AC06 = {
 			isa = PBXGroup;
 			children = (
@@ -91,7 +102,7 @@
 		C45A733125C05C710038AC06 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C45A733425C060850038AC06 /* CategoryTableViewController.swift */,
+				C423655225C1C071004309F5 /* CategoryTableViewController */,
 				C45A733725C0627A0038AC06 /* MenuTableViewController.swift */,
 				C45A733A25C062F50038AC06 /* MenuItemDetailViewController.swift */,
 				C44849D925C08E7400E22044 /* NetworkManagerMenuController.swift */,
@@ -183,6 +194,7 @@
 				C44849DA25C08E7400E22044 /* NetworkManagerMenuController.swift in Sources */,
 				C45A733825C0627A0038AC06 /* MenuTableViewController.swift in Sources */,
 				C44849D725C08CB400E22044 /* Order.swift in Sources */,
+				C423655425C1C267004309F5 /* CategoryTableViewController+UITableViewDataSourse.swift in Sources */,
 				C45A731B25C052E10038AC06 /* AppDelegate.swift in Sources */,
 				C45A731D25C052E10038AC06 /* SceneDelegate.swift in Sources */,
 				C45A733525C060850038AC06 /* CategoryTableViewController.swift in Sources */,
