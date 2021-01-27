@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C44849D425C08B6300E22044 /* CategoriesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44849D325C08B6300E22044 /* CategoriesResponse.swift */; };
+		C44849D425C08B6300E22044 /* IntermediaryModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44849D325C08B6300E22044 /* IntermediaryModels.swift */; };
 		C44849D725C08CB400E22044 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44849D625C08CB400E22044 /* Order.swift */; };
-		C44849DA25C08E7400E22044 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44849D925C08E7400E22044 /* MenuController.swift */; };
+		C44849DA25C08E7400E22044 /* NetworkManagerMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44849D925C08E7400E22044 /* NetworkManagerMenuController.swift */; };
 		C45A731B25C052E10038AC06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45A731A25C052E10038AC06 /* AppDelegate.swift */; };
 		C45A731D25C052E10038AC06 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45A731C25C052E10038AC06 /* SceneDelegate.swift */; };
 		C45A732225C052E10038AC06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C45A732025C052E10038AC06 /* Main.storyboard */; };
@@ -22,9 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C44849D325C08B6300E22044 /* CategoriesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesResponse.swift; sourceTree = "<group>"; };
+		C44849D325C08B6300E22044 /* IntermediaryModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntermediaryModels.swift; sourceTree = "<group>"; };
 		C44849D625C08CB400E22044 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
-		C44849D925C08E7400E22044 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		C44849D925C08E7400E22044 /* NetworkManagerMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerMenuController.swift; sourceTree = "<group>"; };
 		C45A731725C052E10038AC06 /* Restaurant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Restaurant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C45A731A25C052E10038AC06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C45A731C25C052E10038AC06 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 				C45A733425C060850038AC06 /* CategoryTableViewController.swift */,
 				C45A733725C0627A0038AC06 /* MenuTableViewController.swift */,
 				C45A733A25C062F50038AC06 /* MenuItemDetailViewController.swift */,
-				C44849D925C08E7400E22044 /* MenuController.swift */,
+				C44849D925C08E7400E22044 /* NetworkManagerMenuController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -103,7 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				C45A733D25C064B80038AC06 /* MenuItems.swift */,
-				C44849D325C08B6300E22044 /* CategoriesResponse.swift */,
+				C44849D325C08B6300E22044 /* IntermediaryModels.swift */,
 				C44849D625C08CB400E22044 /* Order.swift */,
 			);
 			path = Models;
@@ -180,14 +180,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C45A733B25C062F50038AC06 /* MenuItemDetailViewController.swift in Sources */,
-				C44849DA25C08E7400E22044 /* MenuController.swift in Sources */,
+				C44849DA25C08E7400E22044 /* NetworkManagerMenuController.swift in Sources */,
 				C45A733825C0627A0038AC06 /* MenuTableViewController.swift in Sources */,
 				C44849D725C08CB400E22044 /* Order.swift in Sources */,
 				C45A731B25C052E10038AC06 /* AppDelegate.swift in Sources */,
 				C45A731D25C052E10038AC06 /* SceneDelegate.swift in Sources */,
 				C45A733525C060850038AC06 /* CategoryTableViewController.swift in Sources */,
 				C45A733E25C064B80038AC06 /* MenuItems.swift in Sources */,
-				C44849D425C08B6300E22044 /* CategoriesResponse.swift in Sources */,
+				C44849D425C08B6300E22044 /* IntermediaryModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

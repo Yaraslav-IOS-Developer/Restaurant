@@ -1,5 +1,5 @@
 //
-//  MenuController.swift
+//  NetworkManagerMenuController.swift
 //  Restaurant
 //
 //  Created by Yaroslav on 26.01.21.
@@ -8,12 +8,12 @@
 import Foundation
 
 
-class MenuController {
+class NetworkManagerMenuController {
     
     // MARK: - Properties
     let baseURL  = URL(string: "http://localhost:8080/")
     
-    let shared = MenuController()
+   static let shared = NetworkManagerMenuController()
     
     // MARK: - Private init
     private init() { }
@@ -23,7 +23,19 @@ class MenuController {
     func fetchCategories(completion: @escaping([String]?)  -> Void) {
         let categoryURL = baseURL?.appendingPathComponent("categories")
         
-        let task = URLSession.shared.dataTask(with: categoryURL!) { (data, _, _) in
+        URLSession.shared.dataTask(with: categoryURL!) { (data, _, _) in
+            guard let data = data else {
+                completion(nil)
+                return
+            }
+            //let categories = try? JSONDecoder().decode(Categories.self, from: data)
+            guard let jsonDictionary = try? JSONSerialization.jsonObject(with: data) as?  [String: Any] else {
+                completion(nil)
+                return
+            }
+            let categories = jsonDictionary["categories"] as? [String]
+            
+            completion(categories)
             
         }.resume()
         
@@ -48,8 +60,14 @@ class MenuController {
             return
         }
         
-        let task = URLSession.shared.dataTask(with: baseURL!) { (data, _, _) in
-            
+        URLSession.shared.dataTask(with: menuURL) { (data, _, _) in
+            guard let data = data else {
+                completion(nil)
+                return
+            }
+            let jsonDecoder = JSONDecoder()
+            let menuItems = try? jsonDecoder.decode(MenuItems.self, from: data)
+            completion(menuItems?.items)
         }.resume()
         
     }
@@ -68,9 +86,18 @@ class MenuController {
         
         requst.httpBody = jsonData
         
-        let task = URLSession.shared.dataTask(with: requst) {data,_,_ in
+        URLSession.shared.dataTask(with: requst) {data,_,_ in
             
-        }
+            guard let data = data else {
+                completion(nil)
+                return
+            }
+            
+            let jsonDecoder = JSONDecoder()
+            let preparetionTime = try? jsonDecoder.decode(PreparationTime.self, from: data)
+            completion(preparetionTime?.prepTime)
+            
+        }.resume()
 
     }
     
