@@ -27,4 +27,17 @@ extension CategoryTableViewController/*:UITableViewDataSourse*/ {
         cell.textLabel?.text = category.capitalized
         
     }
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard segue.identifier == "Menusegue" else { return }
+        
+        let controller = segue.destination as! MenuTableViewController
+        let index = tableView.indexPathForSelectedRow!.row
+        let category = categoryes[index]
+        controller.category = category
+    }
 }
+
+
+
+

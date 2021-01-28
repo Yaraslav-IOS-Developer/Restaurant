@@ -7,7 +7,14 @@
 
 import UIKit
 
-class MenuTableViewController: UITableViewController {
 
+class MenuTableViewController: UITableViewController {
+    var category: String!
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        print(#function, category)
+    }
 
 }

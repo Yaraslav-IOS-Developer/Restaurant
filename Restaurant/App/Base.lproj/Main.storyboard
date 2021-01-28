@@ -63,7 +63,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="xuX-9N-Jv8" kind="show" id="iOj-pU-SKo"/>
+                                    <segue destination="xuX-9N-Jv8" kind="show" identifier="Menusegue" id="iOj-pU-SKo"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
