@@ -111,7 +111,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="3NM-2E-DF2" kind="show" id="7VI-yd-Vr9"/>
+                                    <segue destination="3NM-2E-DF2" kind="show" identifier="MenuDetailSegue" id="7VI-yd-Vr9"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -120,7 +120,7 @@
                             <outlet property="delegate" destination="xuX-9N-Jv8" id="sL4-P3-XsO"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="jKb-ok-iWX"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="jKb-ok-iWX"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jy3-nz-Pce" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -147,8 +147,8 @@
             <objects>
                 <navigationController id="3Ef-Z5-ujM" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Menu" id="4Up-d8-Usn"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XmZ-72-DK5">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="XmZ-72-DK5">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>

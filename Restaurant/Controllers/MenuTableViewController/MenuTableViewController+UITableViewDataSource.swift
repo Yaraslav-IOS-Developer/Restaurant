@@ -31,6 +31,17 @@ extension  MenuTableViewController/*:UITableViewDataSourse*/ {
         
     }
     
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard segue.identifier == "MenuDetailSegue" else { return }
+        
+        let controller = segue.destination as! MenuItemDetailViewController
+        let index = tableView.indexPathForSelectedRow!.row
+        let menuItem = menuItems[index]
+        controller.menuItem = menuItem
+        
+    }
+    
     
     
 }
