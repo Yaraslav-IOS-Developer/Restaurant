@@ -133,14 +133,89 @@
                     <view key="view" contentMode="scaleToFill" id="Rz8-b5-1NL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="ybg-0t-xOm">
+                                <rect key="frame" x="16" y="104" width="382" height="693"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SpaghettiAndMeatballls" translatesAutoresizingMaskIntoConstraints="NO" id="oPy-Aj-YxZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="241.5"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aC5-zd-seC">
+                                        <rect key="frame" x="0.0" y="283.5" width="382" height="409.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="749" text="Ham and mushroom ravioli" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0U-eO-1Jb">
+                                                <rect key="frame" x="8" y="8" width="229" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$99.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwl-GT-Nrj">
+                                                <rect key="frame" x="291" y="8" width="91" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ry3-EP-ghv">
+                                                <rect key="frame" x="20" y="349.5" width="342" height="40"/>
+                                                <color key="backgroundColor" systemColor="linkColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="QMD-hq-EsQ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <state key="normal" title="Add the Order">
+                                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                                </state>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="House-made ravioli filled with pine nuts, parmesan, ham, and mushrooms" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YkB-iH-zqP">
+                                                <rect key="frame" x="8" y="76" width="366" height="265.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="265.5" id="3aO-Ek-Hhh"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="uwl-GT-Nrj" secondAttribute="trailing" id="8zC-bj-wwF"/>
+                                            <constraint firstItem="uwl-GT-Nrj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="L0U-eO-1Jb" secondAttribute="trailing" constant="20" id="AAg-we-86l"/>
+                                            <constraint firstItem="L0U-eO-1Jb" firstAttribute="leading" secondItem="aC5-zd-seC" secondAttribute="leading" constant="8" id="Ba8-mJ-isa"/>
+                                            <constraint firstItem="YkB-iH-zqP" firstAttribute="centerX" secondItem="ry3-EP-ghv" secondAttribute="centerX" id="FCz-O8-yGq"/>
+                                            <constraint firstItem="YkB-iH-zqP" firstAttribute="leading" secondItem="aC5-zd-seC" secondAttribute="leading" constant="8" id="LpQ-nc-2wI"/>
+                                            <constraint firstItem="ry3-EP-ghv" firstAttribute="leading" secondItem="aC5-zd-seC" secondAttribute="leading" constant="20" id="RGn-Sd-iSA"/>
+                                            <constraint firstAttribute="bottom" secondItem="ry3-EP-ghv" secondAttribute="bottom" constant="20" id="dgb-JR-6KP"/>
+                                            <constraint firstItem="L0U-eO-1Jb" firstAttribute="top" secondItem="aC5-zd-seC" secondAttribute="top" constant="8" id="exi-3g-35O"/>
+                                            <constraint firstItem="YkB-iH-zqP" firstAttribute="centerX" secondItem="aC5-zd-seC" secondAttribute="centerX" id="fjB-Qh-o9I"/>
+                                            <constraint firstItem="ry3-EP-ghv" firstAttribute="top" secondItem="YkB-iH-zqP" secondAttribute="bottom" constant="8" id="fmr-P5-Tvg"/>
+                                            <constraint firstAttribute="trailing" secondItem="YkB-iH-zqP" secondAttribute="trailing" constant="8" id="ogE-rN-2ZB"/>
+                                            <constraint firstItem="uwl-GT-Nrj" firstAttribute="top" secondItem="aC5-zd-seC" secondAttribute="top" constant="8" id="uk7-ar-nUE"/>
+                                            <constraint firstItem="YkB-iH-zqP" firstAttribute="top" secondItem="L0U-eO-1Jb" secondAttribute="bottom" constant="8" id="xqN-be-lN7"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="im4-XK-acv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="im4-XK-acv" firstAttribute="trailing" secondItem="ybg-0t-xOm" secondAttribute="trailing" constant="16" id="5eY-8c-iB9"/>
+                            <constraint firstItem="ybg-0t-xOm" firstAttribute="top" secondItem="im4-XK-acv" secondAttribute="top" constant="16" id="Vi2-s8-FPk"/>
+                            <constraint firstItem="ybg-0t-xOm" firstAttribute="leading" secondItem="im4-XK-acv" secondAttribute="leading" constant="16" id="gAU-WQ-r3K"/>
+                            <constraint firstItem="oPy-Aj-YxZ" firstAttribute="height" secondItem="im4-XK-acv" secondAttribute="height" multiplier="1/3" id="kOy-OE-5KJ"/>
+                            <constraint firstItem="im4-XK-acv" firstAttribute="bottom" secondItem="ybg-0t-xOm" secondAttribute="bottom" constant="16" id="tLP-gf-VSk"/>
+                        </constraints>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="kOy-OE-5KJ"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="bgV-gP-vc2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nFt-OZ-yXV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3012" y="-640"/>
+            <point key="canvasLocation" x="3011.594202898551" y="-640.17857142857144"/>
         </scene>
         <!--Menu-->
         <scene sceneID="Uxo-dV-Xft">
@@ -197,6 +272,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="SpaghettiAndMeatballls" width="275" height="183"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
