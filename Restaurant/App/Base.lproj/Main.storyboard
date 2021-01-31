@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qat-dX-Auk">
-    <device id="retina6_0" orientation="landscape" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -14,15 +14,15 @@
             <objects>
                 <tableViewController id="PrJ-j7-sc4" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="hnH-IH-F6v">
-                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="45n-e4-H5f">
-                                <rect key="frame" x="0.0" y="28" width="844" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="28" width="390" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="45n-e4-H5f" id="EAR-pk-eQR">
-                                    <rect key="frame" x="44" y="0.0" width="756" height="43.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -132,32 +132,32 @@
             <objects>
                 <viewController id="3NM-2E-DF2" customClass="MenuItemDetailViewController" customModule="Restaurant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rz8-b5-1NL">
-                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="vZ0-Tc-dUQ">
-                                <rect key="frame" x="52" y="40" width="740" height="289"/>
+                                <rect key="frame" x="8" y="96" width="374" height="657"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SpaghettiAndMeatballls" translatesAutoresizingMaskIntoConstraints="NO" id="xLk-bx-9rs">
-                                        <rect key="frame" x="0.0" y="0.0" width="252" height="289"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="224.33333333333334"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uNv-6j-H8C">
-                                        <rect key="frame" x="273" y="0.0" width="467" height="289"/>
+                                        <rect key="frame" x="0.0" y="245.33333333333329" width="374" height="411.66666666666674"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Ham and mushroom ravioli " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="STj-Qg-Kar">
-                                                <rect key="frame" x="8" y="8" width="299.66666666666669" height="30"/>
+                                                <rect key="frame" x="8" y="8" width="228.66666666666666" height="60"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="$99.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQ4-I9-mGB">
-                                                <rect key="frame" x="368" y="8" width="91" height="30"/>
+                                                <rect key="frame" x="275" y="8" width="91" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DqM-xs-pGv">
-                                                <rect key="frame" x="8" y="229" width="451" height="40"/>
+                                                <rect key="frame" x="8" y="351.66666666666669" width="358" height="40"/>
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="gpQ-A0-gVk"/>
@@ -166,9 +166,12 @@
                                                 <state key="normal" title="Add to Order">
                                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="orderButtonTapped:" destination="3NM-2E-DF2" eventType="touchUpInside" id="nB1-wm-QVy"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="House-made ravioli filled with pine nuts, parmesan, ham, and mushrooms" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsI-1k-AXk">
-                                                <rect key="frame" x="8" y="46" width="451" height="48"/>
+                                                <rect key="frame" x="8" y="76" width="358" height="48"/>
                                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -217,6 +220,13 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="bgV-gP-vc2"/>
+                    <connections>
+                        <outlet property="addToOrderButton" destination="DqM-xs-pGv" id="fqM-HN-lse"/>
+                        <outlet property="detailLabel" destination="xsI-1k-AXk" id="ago-Ai-MeF"/>
+                        <outlet property="imageView" destination="xLk-bx-9rs" id="hvi-Fu-wVn"/>
+                        <outlet property="nameLabel" destination="STj-Qg-Kar" id="bJy-nm-Jlz"/>
+                        <outlet property="priceLabel" destination="IQ4-I9-mGB" id="36i-8u-96Y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nFt-OZ-yXV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -228,7 +238,7 @@
                 <navigationController id="3Ef-Z5-ujM" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Menu" id="4Up-d8-Usn"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="XmZ-72-DK5">
-                        <rect key="frame" x="0.0" y="0.0" width="844" height="32"/>
+                        <rect key="frame" x="0.0" y="44" width="390" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -245,7 +255,7 @@
                 <navigationController id="anp-Mp-Tr1" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Order" id="3lg-ns-DdU"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jx2-OI-OaA">
-                        <rect key="frame" x="0.0" y="0.0" width="844" height="32"/>
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>

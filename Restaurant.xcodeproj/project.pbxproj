@@ -71,6 +71,29 @@
 			path = MenuTableViewController;
 			sourceTree = "<group>";
 		};
+		C4501A2925C734FC0049D8AA /* MenuItemDetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C45A733A25C062F50038AC06 /* MenuItemDetailViewController.swift */,
+			);
+			path = MenuItemDetailViewController;
+			sourceTree = "<group>";
+		};
+		C4501A2C25C7354E0049D8AA /* Coontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				C44849D925C08E7400E22044 /* NetworkManagerMenuController.swift */,
+			);
+			path = Coontrollers;
+			sourceTree = "<group>";
+		};
+		C4501A2D25C735E80049D8AA /* OrderTablleViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OrderTablleViewControllers;
+			sourceTree = "<group>";
+		};
 		C45A730E25C052E10038AC06 = {
 			isa = PBXGroup;
 			children = (
@@ -92,7 +115,8 @@
 			children = (
 				C45A732F25C05C4E0038AC06 /* App */,
 				C45A733225C05C910038AC06 /* Models */,
-				C45A733125C05C710038AC06 /* Controllers */,
+				C45A733125C05C710038AC06 /* View Controllers */,
+				C4501A2C25C7354E0049D8AA /* Coontrollers */,
 				C45A732325C052E40038AC06 /* Assets.xcassets */,
 				C45A732825C052E40038AC06 /* Info.plist */,
 			);
@@ -110,15 +134,15 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		C45A733125C05C710038AC06 /* Controllers */ = {
+		C45A733125C05C710038AC06 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C4501A2D25C735E80049D8AA /* OrderTablleViewControllers */,
+				C4501A2925C734FC0049D8AA /* MenuItemDetailViewController */,
 				C423655225C1C071004309F5 /* CategoryTableViewController */,
 				C423655925C2B6AC004309F5 /* MenuTableViewController */,
-				C44849D925C08E7400E22044 /* NetworkManagerMenuController.swift */,
-				C45A733A25C062F50038AC06 /* MenuItemDetailViewController.swift */,
 			);
-			path = Controllers;
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 		C45A733225C05C910038AC06 /* Models */ = {
