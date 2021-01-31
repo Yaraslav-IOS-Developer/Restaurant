@@ -29,6 +29,7 @@ extension  MenuTableViewController/*:UITableViewDataSourse*/ {
         cell.textLabel?.text = menuItem.name
         cell.detailTextLabel?.text = String(format: "$%.2f", menuItem.price)
         
+        
     }
     
     // MARK: - Navigation
