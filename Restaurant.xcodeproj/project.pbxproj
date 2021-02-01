@@ -12,6 +12,8 @@
 		C44849D425C08B6300E22044 /* IntermediaryModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44849D325C08B6300E22044 /* IntermediaryModels.swift */; };
 		C44849D725C08CB400E22044 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44849D625C08CB400E22044 /* Order.swift */; };
 		C44849DA25C08E7400E22044 /* NetworkManagerMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44849D925C08E7400E22044 /* NetworkManagerMenuController.swift */; };
+		C4501A3025C7DF770049D8AA /* OrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4501A2F25C7DF770049D8AA /* OrderTableViewController.swift */; };
+		C4501A3425C7E0C70049D8AA /* OrderTableViewController+UITableViewDataSorce.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4501A3325C7E0C70049D8AA /* OrderTableViewController+UITableViewDataSorce.swift */; };
 		C45A731B25C052E10038AC06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45A731A25C052E10038AC06 /* AppDelegate.swift */; };
 		C45A731D25C052E10038AC06 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45A731C25C052E10038AC06 /* SceneDelegate.swift */; };
 		C45A732225C052E10038AC06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C45A732025C052E10038AC06 /* Main.storyboard */; };
@@ -29,6 +31,8 @@
 		C44849D325C08B6300E22044 /* IntermediaryModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntermediaryModels.swift; sourceTree = "<group>"; };
 		C44849D625C08CB400E22044 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		C44849D925C08E7400E22044 /* NetworkManagerMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerMenuController.swift; sourceTree = "<group>"; };
+		C4501A2F25C7DF770049D8AA /* OrderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewController.swift; sourceTree = "<group>"; };
+		C4501A3325C7E0C70049D8AA /* OrderTableViewController+UITableViewDataSorce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OrderTableViewController+UITableViewDataSorce.swift"; sourceTree = "<group>"; };
 		C45A731725C052E10038AC06 /* Restaurant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Restaurant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C45A731A25C052E10038AC06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C45A731C25C052E10038AC06 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +94,8 @@
 		C4501A2D25C735E80049D8AA /* OrderTablleViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C4501A2F25C7DF770049D8AA /* OrderTableViewController.swift */,
+				C4501A3325C7E0C70049D8AA /* OrderTableViewController+UITableViewDataSorce.swift */,
 			);
 			path = OrderTablleViewControllers;
 			sourceTree = "<group>";
@@ -225,10 +231,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4501A3425C7E0C70049D8AA /* OrderTableViewController+UITableViewDataSorce.swift in Sources */,
 				C45A733B25C062F50038AC06 /* MenuItemDetailViewController.swift in Sources */,
 				C44849DA25C08E7400E22044 /* NetworkManagerMenuController.swift in Sources */,
 				C45A733825C0627A0038AC06 /* MenuTableViewController.swift in Sources */,
 				C44849D725C08CB400E22044 /* Order.swift in Sources */,
+				C4501A3025C7DF770049D8AA /* OrderTableViewController.swift in Sources */,
 				C423655425C1C267004309F5 /* CategoryTableViewController+UITableViewDataSourse.swift in Sources */,
 				C45A731B25C052E10038AC06 /* AppDelegate.swift in Sources */,
 				C45A731D25C052E10038AC06 /* SceneDelegate.swift in Sources */,

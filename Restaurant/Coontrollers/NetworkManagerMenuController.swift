@@ -11,9 +11,15 @@ import Foundation
 class NetworkManagerMenuController {
     
     // MARK: - Properties
+    static let shared = NetworkManagerMenuController()
+    static let orderUpdateNotification = Notification.Name(rawValue:"NetworkManagerMenuController.orderUpdate")
+    var order = Order() {
+        didSet {
+            NotificationCenter.default.post(name: NetworkManagerMenuController.orderUpdateNotification, object: nil)
+        }
+    }
     let baseURL  = URL(string: "http://localhost:8080/")
     
-   static let shared = NetworkManagerMenuController()
     
     // MARK: - Private init
     private init() { }
@@ -28,7 +34,6 @@ class NetworkManagerMenuController {
                 completion(nil)
                 return
             }
-            //let categories = try? JSONDecoder().decode(Categories.self, from: data)
             guard let jsonDictionary = try? JSONSerialization.jsonObject(with: data) as?  [String: Any] else {
                 completion(nil)
                 return
@@ -36,17 +41,12 @@ class NetworkManagerMenuController {
             let categories = jsonDictionary["categories"] as? [String]
             
             completion(categories)
-            
         }.resume()
-        
-        
     }
-    
     
     func fetchImage() {
         
     }
-    
     
     func fetchMenuItens(forCategory categoryName: String, completion: @escaping([MenuItem]?)  -> Void) {
         let initialMenuURL = baseURL?.appendingPathComponent("menu")
@@ -69,9 +69,7 @@ class NetworkManagerMenuController {
             let menuItems = try? jsonDecoder.decode(MenuItems.self, from: data)
             completion(menuItems?.items)
         }.resume()
-        
     }
-    
     
     func submitOrder(forMenuIDs munuIds: [Int], completion: @escaping(Int?)  -> Void) {
         let orderURL = baseURL?.appendingPathComponent("order")
@@ -98,7 +96,5 @@ class NetworkManagerMenuController {
             completion(preparetionTime?.prepTime)
             
         }.resume()
-
     }
-    
 }
