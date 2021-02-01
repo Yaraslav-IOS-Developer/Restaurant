@@ -27,8 +27,15 @@ extension OrderTableViewController /*:UITableViewDataSorce*/ {
         let menuItem = NetworkManagerMenuController.shared.order.menuItem[indexPatch.row]
         cell.textLabel?.text = menuItem.name
         cell.detailTextLabel?.text = String(format: "$%.2f", menuItem.price)
-        
-        
+    }
+    //MARK: - Delete cell
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            NetworkManagerMenuController.shared.order.menuItem.remove(at: indexPath.row)
+        }
     }
     
     // MARK: - Navigation

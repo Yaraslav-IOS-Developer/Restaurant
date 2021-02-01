@@ -12,6 +12,8 @@ class OrderTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationItem.leftBarButtonItem = editButtonItem
+        
         NotificationCenter.default.addObserver(
             tableView,
             selector: #selector(UITableView.reloadData),

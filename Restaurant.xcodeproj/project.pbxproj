@@ -23,6 +23,7 @@
 		C45A733825C0627A0038AC06 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45A733725C0627A0038AC06 /* MenuTableViewController.swift */; };
 		C45A733B25C062F50038AC06 /* MenuItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45A733A25C062F50038AC06 /* MenuItemDetailViewController.swift */; };
 		C45A733E25C064B80038AC06 /* MenuItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45A733D25C064B80038AC06 /* MenuItems.swift */; };
+		C48D641C25C80C4600429067 /* OrderConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48D641B25C80C4600429067 /* OrderConfirmationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		C45A733725C0627A0038AC06 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		C45A733A25C062F50038AC06 /* MenuItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemDetailViewController.swift; sourceTree = "<group>"; };
 		C45A733D25C064B80038AC06 /* MenuItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItems.swift; sourceTree = "<group>"; };
+		C48D641B25C80C4600429067 /* OrderConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderConfirmationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 		C45A733125C05C710038AC06 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C48D641B25C80C4600429067 /* OrderConfirmationViewController.swift */,
 				C4501A2D25C735E80049D8AA /* OrderTablleViewControllers */,
 				C4501A2925C734FC0049D8AA /* MenuItemDetailViewController */,
 				C423655225C1C071004309F5 /* CategoryTableViewController */,
@@ -235,6 +238,7 @@
 				C45A733B25C062F50038AC06 /* MenuItemDetailViewController.swift in Sources */,
 				C44849DA25C08E7400E22044 /* NetworkManagerMenuController.swift in Sources */,
 				C45A733825C0627A0038AC06 /* MenuTableViewController.swift in Sources */,
+				C48D641C25C80C4600429067 /* OrderConfirmationViewController.swift in Sources */,
 				C44849D725C08CB400E22044 /* Order.swift in Sources */,
 				C4501A3025C7DF770049D8AA /* OrderTableViewController.swift in Sources */,
 				C423655425C1C267004309F5 /* CategoryTableViewController+UITableViewDataSourse.swift in Sources */,
