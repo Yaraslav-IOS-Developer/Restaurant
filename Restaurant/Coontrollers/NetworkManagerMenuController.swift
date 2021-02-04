@@ -5,7 +5,8 @@
 //  Created by Yaroslav on 26.01.21.
 //
 
-import Foundation
+
+import  UIKit
 
 
 class NetworkManagerMenuController {
@@ -74,7 +75,7 @@ class NetworkManagerMenuController {
     func submitOrder(forMenuIDs munuIds: [Int], completion: @escaping(Int?)  -> Void) {
         let orderURL = baseURL?.appendingPathComponent("order")
         
-       var requst = URLRequest(url: orderURL!)
+        var requst = URLRequest(url: orderURL!)
         requst.httpMethod = "POST"
         requst.setValue("application/json", forHTTPHeaderField: "Content-Type")
         
@@ -96,5 +97,20 @@ class NetworkManagerMenuController {
             completion(preparetionTime?.prepTime)
             
         }.resume()
+    }
+    
+    // MARK: - Request Image
+    
+    func fetchImage(url: URL, completion: @escaping (UIImage?) -> Void) {
+        
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
+            if let data = data,
+               let image = UIImage(data: data) {
+                completion(image)
+            } else {
+                completion(nil)
+            }
+        }.resume()
+        
     }
 }
